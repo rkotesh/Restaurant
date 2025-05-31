@@ -321,7 +321,8 @@ header.scrolled {
 
 .contact-card {
   background: #fffefc;
-  padding: 1rem;
+  padding: 5px;
+  margin: 5px;
   border-left: 4px solid #334a56;
   border: 2px solid #ddd;
   border-radius: 5px;
@@ -360,7 +361,7 @@ header.scrolled {
 .footer {
   background: #171f23;
   color: white;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .footer-grid {
@@ -380,8 +381,9 @@ header.scrolled {
 }
 
 .footer-description {
-  max-width: 300px;
+  max-width: 200px;
 }
+
 
 .social-links {
   margin-top: 1rem;
@@ -439,7 +441,7 @@ header.scrolled {
 }
 
 /* Responsive */
-@media (max-width: 767px) {
+@media (max-width: 760px) {
   .desktop-nav {
     display: none;
   }
