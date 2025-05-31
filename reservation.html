@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve A Table</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="reservation" class="reservation-section">
+  <div class="container">
+    <h2 class="subtitle">Book Now</h2>
+    <h3 class="title">Reserve a Table</h3>
+
+    <form id="reservation-form" class="reservation-form">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="form-row">
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+      </div>
+
+      <div class="form-row">
+        <input type="number" name="guests" placeholder="No. of Guests" min="1" max="20" required>
+      </div>
+
+      <textarea name="requests" rows="4" placeholder="Special Requests (Optional)"></textarea>
+
+      <button type="submit" class="btn-primary">Submit Reservation</button>
+    </form>
+
+    <div id="reservation-success" style="display: none; margin-top: 1rem; color: green;">
+      Your table has been reserved successfully!
+    </div>
+    <a href="index.html" class="btn-secondary back-home">← Back to Home</a>
+  </div>
+</section>
+    <script>
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('reservation-success').style.display = 'block';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
